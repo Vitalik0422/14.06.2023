@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./styles/main/main.css">
+    <link rel="stylesheet" href="./styles/articles/articles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section class="mainSection">
+            <div class="nav-menuBlock">
+                <a href="/author" class="nav-item">Добавити автора</a>
+                <a href="/articles"class="nav-item">Добавити книгу </a>
+                <a href="/articleslist" class="nav-item">Список книг</a>
+            </div>
+            <div class="mainBlock">
+                <form action=""class ="articleCreate">
+                    <select name="author" id="" class="nameAuthorSelect">
+                    </select>
+                    <select name="genre" id="" class="genreSelect"></select>
+                    <input type="text" class ='nameArticleInput' name="nameArticle" placeholder="Назва статті">
+                    <textarea name="textArticle" id="" cols="30" rows="10" class="textArticleArea" text="article"></textarea>
+                    <button type="submit" class="submitForm">Відправити</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./js/article.js"></script>
+
+</html>

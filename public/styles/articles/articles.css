@@ -1,0 +1,23 @@
+.articleCreate {
+  display: grid;
+  grid-template-areas: "a b g" "c c c" "d . .";
+  gap: 10px;
+}
+.articleCreate .nameAuthorSelect {
+  grid-area: a;
+}
+.articleCreate .genreSelect {
+  grid-area: g;
+}
+.articleCreate .nameArticleInput {
+  box-sizing: border-box;
+  grid-area: b;
+}
+.articleCreate .textArticleArea {
+  grid-area: c;
+  height: 500px;
+}
+.articleCreate .submitForm {
+  grid-area: d;
+  width: 100px;
+}/*# sourceMappingURL=articles.css.map */
