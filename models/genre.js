@@ -19,8 +19,9 @@ const getList = async () => {
     const result = await model.find();
     return result;
 }
-const search = async (data) => {
-
+const find = async (data) => {
+    const result = await model.findOne({genre: data})
+    return result;
 }
 
 const update = (id, data) => {
@@ -33,6 +34,6 @@ const remove = (id, data) => {
 
 module.exports.create = create
 module.exports.getList = getList
-module.exports.search = search
+module.exports.find = find
 module.exports.update = update
 module.exports.remove = remove

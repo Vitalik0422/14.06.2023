@@ -32,6 +32,18 @@ const getList = async () => {
     return data;
 }
 
+const find = async (data) => {
+    const result = await model
+    .find(
+            {author: data},
+    )
+    .populate('author')
+    .populate('genre')
+    .catch( err=> {
+    })
+    return result;
+}
+
 const update = (id, data) => {
 
 }
@@ -42,5 +54,6 @@ const remove = (id, data) => {
 
 module.exports.create = create
 module.exports.getList = getList
+module.exports.find = find
 module.exports.update = update
 module.exports.remove = remove
